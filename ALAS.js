@@ -60,7 +60,9 @@ function sendEmail(qmail,id){
     Subject: `${qmail.value} is interested in joining ALAS!`,
     Body: `Name: ${qmail.value} <br>CunyID: ${id.value}`,
   })
-  console.log("SUCCESS");
+    alert("Submission Completed!");
+    qmail.value = "";
+    id.value = "";
 }
 
 function inputCheck(qmail,id){
