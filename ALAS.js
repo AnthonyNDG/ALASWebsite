@@ -73,7 +73,6 @@ function sendEmail(qmail,id){
   <meta charset="utf-8">
   <title></title>
   <style>
-
     @font-face{
       font-family: Acme;
       src: url(fonts/Acme/Acme-Regular.ttf);
@@ -86,15 +85,14 @@ function sendEmail(qmail,id){
       font-family: 'LuckiestGuy', impact;
       font-size: 50px;
       font-weight: bold;
-      color: gold;
+      color: #ffd700;
       -webkit-text-stroke: .5px black;
     }
     .highlight{
-      color: gold;
+      color: #ffd700;
       font-size: 30px;
       font-weight: bold;
       -webkit-text-stroke: .3px black;
-
     }
     body {    
         margin: 0 !important;
@@ -106,10 +104,11 @@ function sendEmail(qmail,id){
       padding-top: 1%;
       padding-bottom: 1%;
       background-color: gold;
-      display: flex;
-      justify-content: center;
-        align-items: center;
     }
+      .AlasPhoto{
+			width:  15%;
+			margin-left: 42.5%;
+		}
     p{
       font-size: 25px;
       font-family: 'Acme', sans-serif;
@@ -121,7 +120,7 @@ function sendEmail(qmail,id){
       width: 100%;
       margin-top: 10%;
       border-radius: 3em;
-      box-shadow: 0 0 16px 6px rgba(100.0, 85.1, 0, 0.9);
+      box-shadow: 0 0 16px 6px #ffd700;
     }
     button{
       background-color: #586aea;
@@ -131,7 +130,7 @@ function sendEmail(qmail,id){
       font-weight: bold;
       -webkit-text-stroke: .3px black;
       height: 60px;
-      width: 150px;
+      width: 80%;
       border-radius: 25px;
       text-shadow: yellow;
     }
@@ -143,11 +142,17 @@ function sendEmail(qmail,id){
 </head>
 <body>
   <div class="Logo">
-    <img src="https://media.discordapp.net/attachments/647828208657629194/880083885633974322/ALASTransparent.png">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td align="center">
+            <img src="https://media.discordapp.net/attachments/647828208657629194/880083885633974322/ALASTransparent.png">
+        </td>
+    </tr>
+</table>
+    
   </div>
   <p>
     <span class="title">WELCOME TO ALAS!</span>
-
     <img class="photo" src="https://media.discordapp.net/attachments/647828208657629194/880084930380591145/photo3.jpg">
     <br><br>We appreciate you taking your time upon visiting the ALAS website and taking interest to our Club! 
     <br><br>If you would like to join our discord, feel free to click the button down below: (Once invited be sure to <span class="highlight">verify yourself</span> in the verifications channel by typing your Name and QMail as well as viewing and <span class="highlight">reacting to the #rules</span> once verified)
@@ -157,6 +162,7 @@ function sendEmail(qmail,id){
   </p>
 </body>
 </html>
+		
 
 `,
   })
