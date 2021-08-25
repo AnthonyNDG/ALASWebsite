@@ -143,7 +143,7 @@ function sendEmail(qmail,id){
 </head>
 <body>
   <div class="Logo">
-    <img src="img\ALASTransparent.png">
+    <img src="https://media.discordapp.net/attachments/647828208657629194/880083885633974322/ALASTransparent.png">
   </div>
   <p>
     <span class="title">WELCOME TO ALAS!</span>
