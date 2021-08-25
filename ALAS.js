@@ -148,7 +148,7 @@ function sendEmail(qmail,id){
   <p>
     <span class="title">WELCOME TO ALAS!</span>
 
-    <img class="photo" src="img\slideshow\Familia\Photo3.jpg">
+    <img class="photo" src="https://media.discordapp.net/attachments/647828208657629194/880084930380591145/photo3.jpg">
     <br><br>We appreciate you taking your time upon visiting the ALAS website and taking interest to our Club! 
     <br><br>If you would like to join our discord, feel free to click the button down below: (Once invited be sure to <span class="highlight">verify yourself</span> in the verifications channel by typing your Name and QMail as well as viewing and <span class="highlight">reacting to the #rules</span> once verified)
     <br><br><a href="https://discord.gg/MeAaDasSbs"><button>Discord!</button></a>
