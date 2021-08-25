@@ -1,14 +1,14 @@
 body{
 	background-image: url("img/background.jpg");
 	font-family: 'Carter One', cursive;
+        margin: 0 !important;
+        padding: 0 !important;
 }
 .container{
 	background-color: white;
 	width:90%;
 	height: 100%;
 	margin: 0 auto;
-	margin-top: -1%;
-	margin-bottom: -.5%;
 }
 .title{
 	margin-bottom: 3%;
