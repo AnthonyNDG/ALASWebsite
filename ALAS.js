@@ -35,7 +35,7 @@ window.onload = function(){
         }, 500);
   	family.style.opacity=1;
   	$(".family").fadeIn(500);
-  	console.log(2)
+  	console.log(1);
   }
 
 $(".submit").on('click', function(){
