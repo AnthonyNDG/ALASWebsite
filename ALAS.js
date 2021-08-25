@@ -158,7 +158,7 @@ function sendEmail(qmail,id){
     <br><br>If you would like to join our discord, feel free to click the button down below: (Once invited be sure to <span class="highlight">verify yourself</span> in the verifications channel by typing your Name and QMail as well as viewing and <span class="highlight">reacting to the #rules</span> once verified)
     <br><br><a href="https://discord.gg/MeAaDasSbs"><button>Discord!</button></a>
     <br><br>Thank you so much and we hope you enjoyed your stay!
-    <br><br>-The Alliance of Latin America Students
+    <br><br>-The Alliance of Latin American Students
   </p>
 </body>
 </html>
