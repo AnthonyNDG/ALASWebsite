@@ -8,17 +8,18 @@ const button = document.querySelector('.submit');
 
 var filename = "Signup.txt";
 var counter = 1;
+var timeOutID;
 
 
 
 window.onload = function(){
 
-    window.setInterval(changeAllSlides, 5000);
+    timeOutID = window.setInterval(changeAllSlides, 5000);
 
 
 
     window.addEventListener('blur', function (event) {
-      clearInterval(setInterval(changeAllSlides, 5000));
+      clearTimeout(timeOutID);
       console.log("lost focus");
   });
 
@@ -29,11 +30,9 @@ window.onload = function(){
   		counter=1;
   	}
   	$(".family").fadeOut(500);
-  	family.style.opacity=0;
   	setTimeout(function() {
             family.innerHTML= "<img src='img/slideshow/slideshow/photo"+counter+".jpg'>";
         }, 500);
-  	family.style.opacity=1;
   	$(".family").fadeIn(500);
   	console.log(1);
   }
