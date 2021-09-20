@@ -5,6 +5,7 @@ const qmail = document.querySelector('.qmail');
 const id = document.querySelector('.CunyID');
 const errorMessage = document.querySelector('.error');
 const button = document.querySelector('.submit');
+const tab = document.querySelector('.tab');
 
 var filename = "Signup.txt";
 var counter = 1;
@@ -13,6 +14,23 @@ var timeOutID;
 
 
 window.onload = function(){
+  console.log(window.location.href);
+
+  if (window.location.href === "file:///D:/Projects/HTML/ALAS%20Website/ALASEvents.html") {
+    console.log("We got the page babe");
+    var day = new Date();
+    var number = day.getDay();
+    for (var i = 0; i <= number; i++) {
+      if (i <  number) {
+        var weekDay = document.getElementById(i);
+        weekDay.classList.add("past");
+      }
+      if(i=== number){
+        var weekDay = document.getElementById(i);
+        weekDay.classList.add("present");
+      }
+    }
+  }
 
     timeOutID = window.setInterval(changeAllSlides, 5000);
 
@@ -22,19 +40,24 @@ window.onload = function(){
       clearTimeout(timeOutID);
       console.log("lost focus");
   });
+    window.addEventListener('focus', function (event) {
+      timeOutID = window.setInterval(changeAllSlides, 5000);
+      console.log("gained focus");
+  });
+    
 
 
   function changeAllSlides() {   
-  	counter++;
-  	if(counter>=4){
-  		counter=1;
-  	}
-  	$(".family").fadeOut(500);
-  	setTimeout(function() {
+    counter++;
+    if(counter>=7){
+      counter=1;
+    }
+    $(".family").fadeOut(500);
+    setTimeout(function() {
             family.innerHTML= "<img src='img/slideshow/slideshow/photo"+counter+".jpg'>";
         }, 500);
-  	$(".family").fadeIn(500);
-  	console.log(1);
+    $(".family").fadeIn(500);
+    console.log(1);
   }
 
 $(".submit").on('click', function(){
@@ -45,7 +68,9 @@ $(".submit").on('click', function(){
   }
   });
     return false;
+    
 }
+
 
 
 
@@ -105,9 +130,9 @@ function sendEmail(qmail,id){
       background-color: gold;
     }
       .AlasPhoto{
-			width:  15%;
-			margin-left: 42.5%;
-		}
+      width:  15%;
+      margin-left: 42.5%;
+    }
     p{
       font-size: 25px;
       font-family: 'Acme', sans-serif;
@@ -161,8 +186,7 @@ function sendEmail(qmail,id){
   </p>
 </body>
 </html>
-		
-
+    
 `,
   })
   alert("Submission Completed! An email will be sent directly to you. If not, make sure it was typed correctly.");
