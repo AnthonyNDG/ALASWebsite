@@ -15,7 +15,8 @@ body{
 }
 img{
 	width: 100%;
-	
+	margin: 0 !important;
+	padding: 0 !important;
 }
 .top{
 	text-align: center;
@@ -25,7 +26,10 @@ img{
 	width: 50%;
 	text-align: center;
 	margin: auto;
+	transition: all 0.5s ease;
 }
+
+
 .textpanel{
 	width: 35%;
 	margin-left: 7.5%;
@@ -96,4 +100,59 @@ input[type=text] {
 	margin: 8px 0;
   box-sizing: border-box;
   font-weight: bold;
+}
+.tabs{
+	background-color: black;
+	color: yellow;
+	display: flex;
+	flex-flow: row wrap;
+	position: sticky;
+	top: 0;
+	margin-top: -25px;
+}
+.tab{
+	text-align: center;
+	width: 32.5%;
+	border-left-style: solid;
+  border-left-color: coral;
+
+}
+a{
+	text-decoration: none;
+	color: yellow;
+}
+.active{
+	color: mediumpurple;
+}
+.instagram{
+	width: 50%;
+	border: 2px solid black;
+	border-radius:25px;
+}
+
+.calanderLabel{
+	background-color: black;
+	color: gold;
+}
+td{
+	width: 14%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+.calander{
+	text-align: center;
+	margin: 0 auto;
+	border-collapse: collapse;
+	width: 95%;
+}
+.planDetail{
+	font-size: 12px;
+	color: dimgray;
+}
+.past{
+	background-color: gray;
+}
+.present{
+	border: 2px solid red;
 }
